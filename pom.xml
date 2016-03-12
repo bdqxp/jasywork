@@ -7,6 +7,34 @@
   <artifactId>jasywork</artifactId>
   <version>1.0</version>
 
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <version>1.2.1</version>
+          <executions>
+            <execution>
+              <goals>
+                <goal>java</goal>
+              </goals>
+            </execution>
+          </executions>
+          <configuration>
+              <mainClass>JasyWork</mainClass>
+              <!--
+            <arguments>
+              <argument>foo</argument>
+              <argument>bar</argument>
+            </arguments>
+              -->
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
   <dependencies>
     <dependency>
       <groupId>io.netty</groupId>
